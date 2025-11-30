@@ -21,13 +21,18 @@
 }
 
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #main {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
   height: auto;
-  background-image: url("photoes/background.jpg");
+  background-image: url("./photoes/background.jpg");
   background-size: cover;        
   background-position: center;
   background-repeat: no-repeat;  
@@ -67,6 +72,7 @@
   width: 300px;
   height: 200px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  
 }
 .aboutImg
 {
@@ -123,29 +129,76 @@
 
 }
 .site-header {
-  background: linear-gradient(135deg, #cb9911eb, #57fc25e7); 
+  background:linear-gradient(135deg, #19139a, #8d3bcb, #c65cd9);; 
   color: white;
   text-align: center;
-  padding: 40px 20px;
-  border-radius: 0 0 15px 15px; 
+  padding: 20px 20px;
+  border-radius: 0 0 5px 5px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   font-family: "Poppins", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .site-header h1 {
-  font-size: 2.2rem;
+  font-size: 20px;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
 .site-header p {
-  font-size: 1.2rem;
+  font-size: 12px;
   opacity: 0.9;
 }
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f444;
+
+.header {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: flex-start;  
+  flex-direction: column;
+  padding-left: 20px; 
+  gap: 10px;       
 }
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f1ecec;
+  padding: 6px 12px;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.navbar{
+  margin-left: 50px;
+}
+
+.navbar a:hover {
+  background: #8e4ddd;
+}
+
+.site-header .button1 {
+  margin-left: 100px;
+  background-color: #5d3adf;
+  color: white;
+  border: 2px solid #6c63ff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border-radius: 20px;
+} 
+.site-header .button1:hover {
+  background-color: #4b2ecb;
+  border-color: #5a48d6;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
